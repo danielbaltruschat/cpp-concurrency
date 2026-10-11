@@ -1,6 +1,6 @@
-# Concurrent stacks
+# C++ concurrency library
 
-A repository comparing concurrent stack algorithms and memory reclamation
+A repository comparing concurrent data structures and memory reclamation
 strategies. It includes written [implementation notes](stack/notes.md).
 
 ## Implementations
