@@ -11,8 +11,8 @@ strategies. It includes written [implementation notes](stack/notes.md).
 | `lock_free_stack_keep_thread_count` | Treiber stack; reclamation when the number of active pops hits 0 | [treiber.cpp](stack/treiber.cpp) |
 | `lock_free_stack_hazard_pointer_simple` | Treiber stack; reclamation with our simple hazard pointer implementation | [treiber.cpp](stack/treiber.cpp), [hazard_pointers/](hazard_pointers/) |
 | `lock_free_stack_folly` | Treiber stack; reclamation with Folly's hazard pointer implementatoin | [treiber.cpp](stack/treiber.cpp) |
-| `ebs_stack_folly` | Elimination backoff stack; lock-free stack with an elimination array and exponential waiting-window backoff | [elimination_backoff.cpp](stack/elimination_backoff.cpp) |
-| `timestamped_stack` | Timestamped stack; cyclic pools for allocation; Sequential consistency relaxed | [timestamped.cpp](stack/timestamped.cpp) |
+| `ebs_stack_folly` | [Elimination backoff stack](https://people.csail.mit.edu/shanir/publications/Lock_Free.pdf); lock-free stack with an elimination array and exponential waiting-window backoff | [elimination_backoff.cpp](stack/elimination_backoff.cpp) |
+| `timestamped_stack` | [Timestamped stack](https://dl.acm.org/doi/10.1145/2775051.2676963); cyclic pools for allocation; Sequential consistency relaxed | [timestamped.cpp](stack/timestamped.cpp) |
 | `mutex_stack` | Linked stack protected by `std::mutex` | [mutex_stack.cpp](stack/mutex_stack.cpp) |
 
 
